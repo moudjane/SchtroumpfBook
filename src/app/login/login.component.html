@@ -1,0 +1,61 @@
+<div class="login">
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="email" [(ngModel)]="loginData.email" placeholder="Email" class="input-text" />
+        <label>Mot de passe:</label>
+        <input type="password" name="password" [(ngModel)]="loginData.password" placeholder="Mot de passe"
+            class="input-text" />
+        <button type="submit" (click)="submitForm()" class="button">Connexion</button>
+        <p>Vous n'avez pas de compte ? <a routerLink="/register">Créer toi un compte ici</a></p>
+    </form>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .button {
+        width: 100%;
+        background-color: blue;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: rgb(104, 104, 255);
+    }
+
+    .input-text {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>

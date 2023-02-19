@@ -1,0 +1,574 @@
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <img [src]="logoSchtroumpfbook" alt="logoSchtroumpfbook">
+            <input type="text" placeholder="Rechercher...">
+        </div>
+
+        <div class="nav-middle">
+            <a class="active">
+                <fa-icon [icon]="faCamera"></fa-icon>
+            </a>
+            <a>
+                <fa-icon [icon]="faContactBook"></fa-icon>
+            </a>
+            <a>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+            </a>
+            <a>
+                <fa-icon [icon]="faPeopleGroup"></fa-icon>
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a>
+                <fa-icon [icon]="faPeopleArrows"></fa-icon>
+            </a>
+            <a>
+                <img [src]="nouvelUtilisateur" alt="photoDeProfil" class="newUser">
+            </a>
+        </div>
+    </nav>
+
+    <!-- CONTAINER = Tout sauf la navbar -->
+    <div class="container">
+
+        <!-- PARTIE DE GAUCHE -->
+        <div class="left-part">
+            <ul>
+                <li>
+                    <img [src]="nouvelUtilisateur" alt="photoDeProfil" class="newUser">
+                    <p>Mathis OUDJANE</p>
+                </li>
+
+                <li>
+                    <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+                    <p>Retrouver des Schtroumpfs</p>
+                </li>
+                <li>
+                    <fa-icon [icon]="faClock"></fa-icon>
+                    <p>Plus récentes</p>
+                </li>
+                <li>
+                    <fa-icon [icon]="faPeopleGroup"></fa-icon>
+                    <p>Groupes</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- PARTIE DU MILIEU -->
+        <div class="middle-part">
+
+            <div class="post create">
+                <div class="post-top">
+                    <div class="pp">
+                        <img [src]="schtroumpfLunette" alt="smurfpost">
+                    </div>
+                    <input type="text" placeholder="Quoi de neuf, Mathis ?" />
+                </div>
+
+                <div class="post-bottom">
+                    <div class="action">
+                        <fa-icon [icon]="faCamera" class="iconRed"></fa-icon>
+                        <span> Vidéo en direct</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faPhotoFilm" class="iconGreen"></fa-icon>
+                        <span> Photo/Vidéo</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faSmile" class="iconOrange"></fa-icon>
+                        <span> Humeur/Activité</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTIE CENTRALE -->
+            <div class="post">
+                <div class="post-top">
+                    <div class="pp">
+                        <img [src]="grandSchtroumpf" alt="grandSchtroumpf">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Grand Schtroumpf</p>
+                        <span class="time">Aujourd'hui, à 16:32</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span>Venez vous joindre à la parade !!!</span>
+                    <img [src]="SchtroumpfsMusique" alt="SchtroumpfsMusique">
+                </div>
+                <div class="post-bottom">
+                    <div class="action">
+                        <fa-icon [icon]="faThumbsUp"></fa-icon>
+                        <span> J'aime</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faMessage"></fa-icon>
+                        <span> Commenter</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faShare"></fa-icon>
+                        <span> Envoyer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="pp">
+                        <img [src]="schtroumpfLunette" alt="schtroumpf-a-lunette">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Schtroumpf à lunettes</p>
+                        <span class="time">Hier, à 10:09</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span>Joyeux anniversaire Schtroumpf costaud ! Le plus musclé des schtroumpfs 🎂🥳</span>
+                    <img [src]="netImage" alt="smurfpost">
+                </div>
+                <div class="post-bottom">
+                    <div class="action">
+                        <fa-icon [icon]="faThumbsUp"></fa-icon>
+                        <span> J'aime</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faMessage"></fa-icon>
+                        <span> Commenter</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faShare"></fa-icon>
+                        <span> Envoyer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-top">
+                    <div class="pp">
+                        <img [src]="Gargamele" alt="Gargamele">
+                    </div>
+                    <div class="post-info">
+                        <p class="name">Gargamele</p>
+                        <span class="time">Hier, à 17:45</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span>Je vais me régaler AHAHAHAH</span>
+                    <img [src]="gargameleCuisine" alt="gargameleCuisine">
+                </div>
+                <div class="post-bottom">
+                    <div class="action">
+                        <fa-icon [icon]="faThumbsUp"></fa-icon>
+                        <span> J'aime</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faMessage"></fa-icon>
+                        <span> Commenter</span>
+                    </div>
+                    <div class="action">
+                        <fa-icon [icon]="faShare"></fa-icon>
+                        <span> Envoyer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <a>Confidentialité</a> ·
+                <a>Conditions générales</a> ·
+                <a>Publicités</a> ·
+                <a>Choix publicitaires</a> ·
+                <a>Cookies</a> ·
+                <span class="copyright">SchtroumpfBook © 2023</span>
+            </div>
+        </div>
+
+        <!-- PARTIE DE DROITE -->
+        <div class="right-part">
+            <div class="group-section">
+                <h4>Conversations de groupe</h4>
+                <a class="page">
+                    <div class="pp">
+                        <img [src]="plus" alt="plus">
+                    </div>
+                    <p class="name">Créer un nouveau groupe</p>
+                </a>
+            </div>
+            <div class="friends-section">
+                <h4>Votre ennemi</h4>
+                <a class="friend">
+                    <div class="pp">
+                        <img [src]="Gargamele" alt="schtroumpfFarceur">
+                    </div>
+                    <p class="name">Gargamele</p>
+                </a>
+            </div>
+
+            <div class="friends-section">
+                <div *ngIf="users && users.length">
+                    <h4 for="friend-select">Ajouter un ami</h4>
+                    <select id="friend-select" [(ngModel)]="selectedFriendId">
+                        <option value="" disabled selected>Choisir un ami</option>
+                        <option *ngFor="let user of users" [value]="user.id">{{ user.pseudo }} ({{user.role}})</option>
+                    </select>
+                    <button type="button" (click)="addFriend()">Ajouter</button>
+                    <ul>
+                        <li *ngFor="let friend of friendsList">{{friend.pseudo}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="friends-section">
+                <h4>Vos amis</h4>
+                <a class="friend">
+                    <div class="pp">
+                        <img [src]="schtroumpfFarceur" alt="schtroumpfFarceur">
+                    </div>
+                    <p class="name">Schtroumpf Farceur</p>
+                </a>
+
+                <a class="friend">
+                    <div class="pp">
+                        <img [src]="schtroumpfLunette" alt="schtroumpfLunette">
+                    </div>
+                    <p class="name">Schtroumpf à Lunettes</p>
+                </a>
+
+                <a class="friend">
+                    <div class="pp">
+                        <img [src]="grandSchtroumpf" alt="grandSchtroumpf">
+                    </div>
+                    <p class="name">Grand Schtroumpf</p>
+                </a>
+
+                <a class="friend">
+                    <div class="pp">
+                        <img [src]="Schtroumpfette" alt="Schtroumpfette">
+                    </div>
+                    <p class="name">Schtroumpfette</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <style>
+        /* TOUT */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        /* NAVBAR */
+        nav {
+            height: 70px;
+            width: 100%;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        nav .nav-left,
+        nav .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .nav-left>img {
+            width: 40px;
+        }
+
+        nav .nav-left>input {
+            height: 40px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            background-color: #eeee;
+            margin-left: 10px;
+        }
+
+        nav .nav-middle {
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 5px;
+            margin-right: 100px;
+        }
+
+        nav .nav-middle a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin: 0px 10px;
+        }
+
+        nav .nav-middle a.active {
+            color: royalblue;
+            position: relative;
+        }
+
+        nav .nav-middle a.active::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: royalblue;
+        }
+
+        nav .nav-right .profile,
+        .container .left-part .profile {
+            background: url('./images/pp.jpg');
+            height: 30px;
+            width: 30px;
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        nav .nav-right a {
+            text-decoration: none;
+            color: black;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #eeee;
+            display: grid;
+            place-items: center;
+            margin-left: 1rem;
+        }
+
+        .container {
+            background: #eeee;
+            display: flex;
+        }
+
+        .container .left-part,
+        .container .right-part {
+            position: sticky;
+            top: 70px;
+            width: 250px;
+            height: calc(100vh - 70px);
+        }
+
+        .container .left-part ul {
+            padding: 10px 0px;
+        }
+
+        .container .left-part ul li {
+            list-style: none;
+            display: flex;
+            padding: .7rem 1rem;
+            align-items: center;
+            transition: .3s;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container .left-part ul li:hover {
+            background: #dddd;
+        }
+
+        .container .left-part ul li>p {
+            margin-left: 10px;
+        }
+
+        .container .left-part ul li>i {
+            font-size: 20px;
+            color: slateblue;
+        }
+
+        .middle-part {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: grey;
+            font-size: 13px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .links a:not(:hover) {
+            text-decoration: none;
+        }
+
+        .copyright {
+            color: grey;
+            font-size: 13px;
+        }
+
+        .post {
+            width: 550px;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .post .post-top {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .post .post-top .pp {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .post .post-top .pp>img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .post .post-top .post-info {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .post .post-top .post-info .name {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .post .post-top .post-info .time {
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .post .post-top i {
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .post .post-top>input {
+            height: 40px;
+            padding: 5px 10px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            flex: 1;
+            background: #eeee;
+            margin-left: 10px;
+        }
+
+        .post .post-content {
+            font-size: 16px;
+            font-weight: normal;
+            padding: 10px;
+        }
+
+        .post .post-content>img {
+            width: 100%;
+            margin: 5px 0px;
+        }
+
+        .post .post-bottom {
+            box-shadow: 1px solid #dddd;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 5px 0px 5px;
+        }
+
+        .post .post-bottom .action {
+            padding: 10px;
+            border-radius: 10px;
+            transition: .3s ease-in;
+            cursor: pointer;
+        }
+
+        .post .post-bottom .action:hover {
+            background: #eeee;
+        }
+
+        .container .right-part {
+            padding: 1rem;
+        }
+
+        .right-part .group-section,
+        .right-part .friends-section {
+            margin: 1rem 0px;
+        }
+
+        .right-part .group-section h4,
+        .right-part .friends-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .right-part .group-section .page,
+        .right-part .friends-section .friend {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            border-radius: 5px;
+            padding: 7px 10px;
+            color: black;
+        }
+
+        .right-part .group-section .page:hover,
+        .right-part .friends-section .friend:hover {
+            background: #dddd;
+        }
+
+        .right-part .group-section .page>.pp,
+        .right-part .friends-section .friend>.pp {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .right-part .group-section .page>.pp>img,
+        .right-part .friends-section .friend>.pp>img {
+            width: 100%;
+        }
+
+        .right-part .group-section .name,
+        .right-part .friends-section .name {
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        .iconRed {
+            color: red;
+        }
+
+        .iconGreen {
+            color: green;
+        }
+
+        .iconOrange {
+            color: orange;
+        }
+
+        .newUser {
+            width: 40px;
+            border-radius: 50%;
+        }
+    </style>
