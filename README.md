@@ -1,5 +1,8 @@
 # SchtroumpfsApp
 
+![image](https://user-images.githubusercontent.com/91454078/219976447-a5c30651-5bd1-4f35-9095-08e952c98a8c.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
