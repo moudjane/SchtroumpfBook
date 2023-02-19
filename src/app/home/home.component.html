@@ -208,11 +208,12 @@
             <div class="friends-section">
                 <div *ngIf="users && users.length">
                     <h4 for="friend-select">Ajouter un ami</h4>
-                    <select id="friend-select" [(ngModel)]="selectedFriendId">
+                    <select id="friend-select" [(ngModel)]="selectedFriendId" class="input-text">
                         <option value="" disabled selected>Choisir un ami</option>
-                        <option *ngFor="let user of users" [value]="user.id">{{ user.pseudo }} ({{user.role}})</option>
+                        <option *ngFor="let user of users" [value]="user.id">{{ user.pseudo }} ({{user.role}})
+                        </option>
                     </select>
-                    <button type="button" (click)="addFriend()">Ajouter</button>
+                    <button type="button" (click)="addFriend()" class="button">Ajouter en ami</button>
                     <ul>
                         <li *ngFor="let friend of friendsList">{{friend.pseudo}}</li>
                     </ul>
@@ -570,5 +571,32 @@
         .newUser {
             width: 40px;
             border-radius: 50%;
+        }
+
+        .input-text {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 0px 2px;
+            padding: 10px 6px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 80%;
+        }
+
+        .button:hover {
+            background-color: rgb(104, 104, 255);
         }
     </style>
